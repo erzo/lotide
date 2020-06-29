@@ -1,6 +1,3 @@
-const assertEqual = require('./assertEqual');
-
-
 const head = function(firstNum) {
   return firstNum[0];
 }
