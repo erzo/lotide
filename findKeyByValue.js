@@ -1,3 +1,5 @@
+const findKey = require("./findKey");
+
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
@@ -30,4 +32,8 @@ const findKeyByValue = function (tvShows, showName) {
 //assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 //assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
+//console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
+
+
+//exports findKeyByValue() function
+module.exports = findKeyByValue;
