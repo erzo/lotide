@@ -1,7 +1,5 @@
 const eqArrays = require('./eqArrays');
 
-
-
 const assertArraysEqual = function(actual, expected) {
   let x = eqArrays(actual, expected);
   if (x === false) {
@@ -11,7 +9,6 @@ const assertArraysEqual = function(actual, expected) {
   }
   
 };
-
 
 //exports assertArraysEqual() function
 module.exports = assertArraysEqual;
